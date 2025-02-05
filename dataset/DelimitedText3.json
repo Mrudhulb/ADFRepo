@@ -1,0 +1,79 @@
+{
+	"name": "DelimitedText3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "Consumer_Complaints.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Complaint ID",
+				"type": "String"
+			},
+			{
+				"name": "Product",
+				"type": "String"
+			},
+			{
+				"name": "Sub-product",
+				"type": "String"
+			},
+			{
+				"name": "Issue",
+				"type": "String"
+			},
+			{
+				"name": "Sub-issue",
+				"type": "String"
+			},
+			{
+				"name": "State",
+				"type": "String"
+			},
+			{
+				"name": "ZIP code",
+				"type": "String"
+			},
+			{
+				"name": "Submitted via",
+				"type": "String"
+			},
+			{
+				"name": "Date received",
+				"type": "String"
+			},
+			{
+				"name": "Date sent to company",
+				"type": "String"
+			},
+			{
+				"name": "Company",
+				"type": "String"
+			},
+			{
+				"name": "Company response",
+				"type": "String"
+			},
+			{
+				"name": "Timely response?",
+				"type": "String"
+			},
+			{
+				"name": "Consumer disputed?",
+				"type": "String"
+			}
+		]
+	}
+}
