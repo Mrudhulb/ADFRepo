@@ -2,7 +2,7 @@
 	"name": "TEST_DB",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "sql_testdb_link",
+			"referenceName": "AzureSqlDatabase5",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
