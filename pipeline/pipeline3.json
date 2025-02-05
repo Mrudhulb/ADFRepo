@@ -67,7 +67,7 @@
 								"sink": {
 									"type": "DelimitedTextSink",
 									"storeSettings": {
-										"type": "AzureBlobStorageWriteSettings"
+										"type": "AzureBlobFSWriteSettings"
 									},
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
@@ -104,7 +104,17 @@
 							"outputs": [
 								{
 									"referenceName": "DelimitedText2",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"Schema": {
+											"value": "@item().table_name\r\n",
+											"type": "Expression"
+										},
+										"Table": {
+											"value": "@item().table_schema",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
