@@ -1,16 +1,16 @@
 {
-	"name": "DelimitedText3",
+	"name": "csv_blob2811_cont2_sink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "FileServer1",
+			"referenceName": "AzureBlobStorage4",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "FileServerLocation",
-				"fileName": "Consumer_Complaints.csv"
+				"type": "AzureBlobStorageLocation",
+				"container": "container2"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
